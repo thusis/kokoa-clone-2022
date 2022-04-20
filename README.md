@@ -7,5 +7,5 @@ fist, change the file
 save the file
 
 then go to Github desktop
-check the file and write the title of commit
+check the file and write the title(summary) of commit
 And 'commit to master' and push
