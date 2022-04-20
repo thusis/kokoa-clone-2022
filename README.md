@@ -1,2 +1,3 @@
-#Kokoa Clone 2022 Update
-Css got so much better!
+# Kokoa Clone 2022 Update
+
+HTML & Css got so much fun!
