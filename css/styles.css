@@ -1,36 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Square+Peg&display=swap");
 /*구글폰트에서 CSS style 추출 후 적용 */
+@import "reset.css";
+/* reset CSS.com 은 브라우저스타일(기본margin, padding 등)을 삭제해줌*/
+@import "status-bar.css";
+/*스테이터스 바 파일을 따로 만들어놓고 불러와주기*/
 
 body {
   font-family: "Open Sans", sans-serif;
 }
-/*font-family로 폰트 불러오거나*/
+/*font-family로 폰트 불러오기*/
 
-.status-bar {
+.welcome-header {
+  margin-top: 90px;
+  text-align: center;
   display: flex;
-  justify-content: space-between;
-  /*요소들의 간격을 일정하게 띄워준다*/
-}
-.status-bar__column {
-  width: 33%;
-}
-
-.status-bar__column:nth-child(1) span {
-  /*스테이터스바컬럼의 첫번째(자식) span에 간격을 부여*/
-  margin-right: 5px;
-}
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-self: center;
-}
-.status-bar__column:nth-child(3) {
-  display: flex;
-  justify-content: flex-end;
+  /*header,h1,p 모두 center에 위치시키기 위해 flex사용*/
+  flex-direction: column;
+  /*header,h1,p가 좌우가 아닌 위아래로 놓길 바라기 때문에 flex-direction사용*/
   align-items: center;
-  /*justify-content flex end는 화면 상 제일 끝에, alignitem center는 요소들을 세로 정렬*/
+  /*교차축을 이용해 센터에 위치하게함*/
+  font-weight: 800;
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 
-.status-bar__column .fa-battery-full {
-  margin: 0px 7px;
-  /*위아래여백0, 양옆5*/
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+  margin-bottom: 90px;
 }
