@@ -4,6 +4,7 @@
 /* reset CSS.com 은 브라우저스타일(기본margin, padding 등)을 삭제해줌*/
 @import "status-bar.css";
 /*스테이터스 바 파일을 따로 만들어놓고 불러와주기*/
+@import "variables.css";
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -31,3 +32,27 @@ body {
   opacity: 0.7;
   margin-bottom: 90px;
 }
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  /*form들이 위아래로 있도록*/
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  font-size: 18px;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder {
+  /*login-form 클래스 안에 있는 input에만 스타일적용(클래스 따로 설정하지 않았으므로)*/
+  color: rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+/*크롬 확장프로그램 color 사용해서 내용 추출, variables 폴더 만들어서 변수 지정*/
