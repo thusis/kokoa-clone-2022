@@ -1,6 +1,7 @@
 .status-bar {
   display: flex;
   justify-content: space-between;
+  margin-top: 3px;
   /*요소들의 간격을 일정하게 띄워준다*/
 }
 
@@ -20,6 +21,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 3px;
   /*justify-content flex end는 화면 상 제일 끝에, alignitem center는 요소들을 세로 정렬*/
 }
 .status-bar__column .fa-battery-full {

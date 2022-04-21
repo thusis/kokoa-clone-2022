@@ -49,6 +49,7 @@ body {
   transition: border-color 0.3s ease-in-out;
 }
 #login-form input::placeholder {
+  /* ::placeholder를 가상선택자(pseudo-element)라고 한다*/
   /*login-form 클래스 안에 있는 input에만 스타일적용(클래스 따로 설정하지 않았으므로)*/
   color: rgba(0, 0, 0, 0.4);
 }
@@ -56,3 +57,26 @@ body {
   border-color: var(--yellow);
 }
 /*크롬 확장프로그램 color 사용해서 내용 추출, variables 폴더 만들어서 변수 지정*/
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+  /*if not type="submit"아래 적용*/
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  /*커서 모양 변경*/
+  padding: 15px 0px;
+  border-radius: 2%;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+  font-size: 13px;
+  /*inherit은 색상을 아버지(상위 default값인 black)로부터 상속받아옴*/
+}
