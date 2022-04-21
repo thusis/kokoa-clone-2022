@@ -1,8 +1,7 @@
 .status-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*요소들의 간격을 일정하게 띄워준다*/
   margin-top: 3px;
-  /*요소들의 간격을 일정하게 띄워준다*/
 }
 
 .status-bar__column {
