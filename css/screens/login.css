@@ -1,0 +1,69 @@
+.welcome-header {
+  margin-top: 90px;
+  text-align: center;
+  display: flex;
+  /*header,h1,p 모두 center에 위치시키기 위해 flex사용*/
+  flex-direction: column;
+  /*header,h1,p가 좌우가 아닌 위아래로 놓길 바라기 때문에 flex-direction사용*/
+  align-items: center;
+  /*교차축을 이용해 센터에 위치하게함*/
+  font-weight: 800;
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+  margin-bottom: 90px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  /*form들이 위아래로 있도록*/
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  font-size: 18px;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder {
+  /* ::placeholder를 가상선택자(pseudo-element)라고 한다*/
+  /*login-form 클래스 안에 있는 input에만 스타일적용(클래스 따로 설정하지 않았으므로)*/
+  color: rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+/*크롬 확장프로그램 color 사용해서 내용 추출, variables 폴더 만들어서 변수 지정*/
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+  /*if not type="submit"아래 적용*/
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  /*커서 모양 변경*/
+  padding: 15px 0px;
+  border-radius: 2%;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+  font-size: 13px;
+  /*inherit은 색상을 아버지(상위 default값인 black)로부터 상속받아옴*/
+}
