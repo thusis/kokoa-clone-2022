@@ -7,7 +7,7 @@
   padding: 15px 45px;
   box-sizing: border-box;
   /*box-sizing을 넣어준 이유는, width 100%으로 지정해주니 padding 사이즈 때문에 네번째 아이콘(점세개)이 사라져서*/
-  /*CSS에게 padding적용해도 boxsize늘리지 말라고 전달하는 것*/
+  /*  box-sizing: border-box; CSS에게 padding적용해도 boxsize늘리지 말라고 전달하는 것*/
   border-top: 1px solid #e2e2e2;
 }
 
@@ -17,5 +17,25 @@
 }
 
 .nav__link {
+  position: relative;
+  /*nav_noti..의 position:absolute가 올바른 위치에 적용되기 위해선 부모 요소에 relative적용 필수, 기준이 되어줌*/
   color: #2f363f;
+}
+
+.nav__notification {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  color: white;
+  font-weight: 800;
+  position: absolute;
+  /*아이콘 위에 notification팝업 적용*/
+  /* position:absolute는 가장 가까운 relative를 가진 부모 기준으로 움직인다*/
+  /* realtive없이 right:5px; 만 적을 경우 전체 navigationbar를 기준으로 오른쪽으로부터 5px에 위치 */
+  left: 15px;
+  bottom: 15px;
 }
