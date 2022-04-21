@@ -1,5 +1,8 @@
 .status-bar {
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
   justify-content: space-between; /*요소들의 간격을 일정하게 띄워준다*/
   margin-top: 3px;
 }

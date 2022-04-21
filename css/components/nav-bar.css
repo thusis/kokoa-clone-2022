@@ -1,9 +1,20 @@
 .nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /*position:fixed 스크롤 내려도 아래 항상 고정되도록*/
   background-color: #e6e6e6;
   padding: 15px 45px;
+  box-sizing: border-box;
+  /*box-sizing을 넣어준 이유는, width 100%으로 지정해주니 padding 사이즈 때문에 네번째 아이콘(점세개)이 사라져서*/
+  border-top: 1px solid #e2e2e2;
 }
 
-.nav__btn {
+.nav__ul {
   display: flex;
   justify-content: space-between;
+}
+
+.nav__link {
+  color: #2f363f;
 }

@@ -126,3 +126,9 @@ table {
 input:focus {
   outline: none;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/*link들이 자동으로 blue&purple 컬러로 보이지 않도록!*/
