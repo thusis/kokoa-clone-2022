@@ -4,9 +4,9 @@
 /* reset CSS.com 은 브라우저스타일(기본margin, padding 등)을 삭제해줌*/
 @import "variables.css";
 
-@import "components/status-bar.css";
-/*스테이터스 바 파일을 따로 만들어놓고 불러와주기*/
+@import "components/status-bar.css"; /*스테이터스 바 파일을 따로 만들어놓고 불러와주기*/
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
 
 @import "screens/login.css";
 

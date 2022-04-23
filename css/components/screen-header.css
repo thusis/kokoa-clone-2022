@@ -1,0 +1,17 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  /*클론코딩할 때 직접 수치 재는 습관*/
+}
+
+.screen-header__title {
+  /*언더바 두 개 인거 잊지 마세요*/
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+}

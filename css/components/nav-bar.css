@@ -22,13 +22,12 @@
   color: #2f363f;
 }
 
-.nav__notification {
+.nav__notification,
+.nav__notification2 {
   background-color: tomato;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
   border-radius: 100%;
   color: white;
   font-weight: 800;
@@ -37,5 +36,13 @@
   /* position:absolute는 가장 가까운 relative를 가진 부모 기준으로 움직인다*/
   /* realtive없이 right:5px; 만 적을 경우 전체 navigationbar를 기준으로 오른쪽으로부터 5px에 위치 */
   left: 15px;
-  bottom: 15px;
+  bottom: 100%;
+}
+.nav__notification {
+  width: 20px;
+  height: 20px;
+}
+.nav__notification2 {
+  width: 10px;
+  height: 10px;
 }
