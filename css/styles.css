@@ -9,8 +9,10 @@
 @import "components/screen-header.css";
 
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: #2f363f;
 }
 /*font-family로 폰트 불러오기*/
