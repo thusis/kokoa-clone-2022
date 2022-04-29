@@ -52,6 +52,11 @@
 
 .open-post {
   display: flex;
+  justify-content: space-between;
+}
+
+.open-post__column {
+  margin: 25px 0px;
 }
 
 .open-post__title {
@@ -91,4 +96,30 @@
 
 .open-post__member-status {
   color: #ee87c6;
+}
+.open-post__column--photo {
+  position: relative;
+  /* 부모 위치에서 포지션 렐라티브 시키고 */
+}
+.open-post__column--photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+
+.open-post__heart--count {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0.8;
+  padding: 5px;
+  border-radius: 20px;
+  diplay: flex;
+  align-items: center;
+  position: absolute;
+  /* 자녀 위치에서 포지션 앱솔루트 시키면 그림위에 그림 배치 가능해진다 */
+  bottom: 5px;
+  right: 5px;
+}
+.open-post__heart--count span {
+  margin-left: 3px;
 }
