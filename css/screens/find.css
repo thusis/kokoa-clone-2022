@@ -1,26 +1,7 @@
-.find-icons {
-  display: flex;
-  justify-content: space-between;
+.main-screen .icon-row {
   padding-bottom: 15px;
   border-bottom: var(--main-border);
 }
-
-.find-icons__icon {
-  display: flex;
-  flex-direction: column;
-  /* find-icons__icon의 각 요소를 세로로 정렬 */
-  align-items: center;
-  /* find-icons__icon의 각 요소를 가운데 정렬 */
-}
-
-.find-icons__icon i {
-  font-size: 35px;
-}
-
-.find-icons__icon span {
-  margin-top: 15px;
-}
-
 .recommended-friends__text {
   margin: 15px 0px;
   color: rgba(0, 0, 0, 0.5);
@@ -43,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   opacity: 0.8;
-  margin-bottom: 25px;
+  margin: 10px 0px;
 }
 
 .open-chat__header span {

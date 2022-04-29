@@ -1,0 +1,20 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  /* icon-row__icon의 각 요소를 세로로 정렬 */
+  align-items: center;
+  /* icon-row__icon의 각 요소를 가운데 정렬 */
+}
+
+.icon-row__icon i {
+  font-size: 35px;
+}
+
+.icon-row__icon span {
+  margin-top: 15px;
+}
