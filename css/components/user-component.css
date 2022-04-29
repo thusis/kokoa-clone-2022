@@ -1,5 +1,6 @@
 .user-component {
   display: flex;
+  justify-content: space-between;
 }
 
 .user-component__column:first-child {
@@ -31,4 +32,18 @@
 .user-component__avatar--xl {
   width: 80px;
   height: 80px;
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.user-component__title--not-bold {
+  font-weight: 100;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
 }
