@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: var(--main-border);
 }
 
 .find-icons__icon {
@@ -19,4 +19,86 @@
 
 .find-icons__icon span {
   margin-top: 15px;
+}
+
+.recommended-friends__text,
+.openchat {
+  margin: 15px 0px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+
+.recommended-friends__contents {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  font-size: larger;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.3);
+  align-items: center; /* 가로 기준 중앙에 놓기 */
+  justify-content: center; /*세로 기준 중앙에 놓기*/
+  border-bottom: var(--main-border);
+}
+
+.openchat {
+  display: flex;
+  justify-content: space-between;
+}
+.openchat_column {
+  display: flex;
+  flex-direction: column;
+}
+.openchat_column i {
+  margin-left: 3px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.chat {
+  display: flex;
+  width: 440px;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.chat_column--left,
+.chat_column--right {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat_column--left {
+  justify-content: center;
+}
+.chat_column--right {
+  justify-content: right;
+}
+
+.chat h2 {
+  font-size: 18px;
+}
+
+.chat h4 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.chat_column__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.chat_column__bottom img {
+  width: 22px;
+  height: 22px;
+  border-radius: 70%;
+}
+
+.chat h6 {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.chat h7 {
+  font-size: 14px;
+  color: fuchsia;
 }
