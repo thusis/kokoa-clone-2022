@@ -10,12 +10,12 @@
   width: 70px;
   height: 70px;
   border-radius: 25px;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .user-component__title {
   display: flex;
-  margin: 30px;
+  margin: 30px 30px 5px 30px;
   align-items: center;
   font-weight: 800;
   font-size: 18px;
@@ -23,6 +23,7 @@
 
 .user-component__subtitle {
   margin-top: 8px;
+  margin-left: 30px;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
 }
