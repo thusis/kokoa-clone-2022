@@ -24,19 +24,9 @@
 
 .nav__notification,
 .nav__notification2 {
-  background-color: tomato;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  color: white;
-  font-weight: 800;
   position: absolute;
-  /*아이콘 위에 notification팝업 적용*/
-  /* position:absolute는 가장 가까운 relative를 가진 부모 기준으로 움직인다*/
-  /* realtive없이 right:5px; 만 적을 경우 전체 navigationbar를 기준으로 오른쪽으로부터 5px에 위치 */
   left: 15px;
-  bottom: 100%;
+  bottom: 15px;
 }
 .nav__notification {
   width: 20px;

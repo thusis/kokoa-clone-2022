@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
+
   /*클론코딩할 때 직접 수치 재는 습관*/
 }
 
